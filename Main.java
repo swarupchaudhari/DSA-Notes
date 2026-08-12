@@ -5,88 +5,46 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // Q: take input of 2 numbers and print the sum
         Scanner in = new Scanner(System.in);
-        int num1, num2, sum;
+//        String fruit = in.next();
+//
+//        switch (fruit) {
+//            case "Mango" -> System.out.println("King of fruits");
+//            case "Apple" -> System.out.println("A sweet red fruit");
+//            case "Orange" -> System.out.println("Round fruit");
+//            case "Grapes" -> System.out.println("Small fruit");
+//            default -> System.out.println("please enter a valid fruit");
+//        }
 
-        System.out.print("Enter number 1: ");
-        num1 = in.nextInt();
-        System.out.print("Enter number 2: ");
-        num2 = in.nextInt();
-        sum = num1 + num2;
-        System.out.println("The sum = " + sum);
+        int day = in.nextInt();
+//        switch (day) {
+//            case 1 -> System.out.println("Monday");
+//            case 2 -> System.out.println("Tuesday");
+//            case 3 -> System.out.println("Wednesday");
+//            case 4 -> System.out.println("Thursday");
+//            case 5 -> System.out.println("Friday");
+//            case 6 -> System.out.println("Saturday");
+//            case 7 -> System.out.println("Sunday");
+//        }
 
-        System.out.print("Enter number 1: ");
-        num1 = in.nextInt();
-        System.out.print("Enter number 2: ");
-        num2 = in.nextInt();
-        sum = num1 + num2;
-        System.out.println("The sum = " + sum);
+//        switch (day) {
+//            case 1:
+//            case 2:
+//            case 3:
+//            case 4:
+//            case 5:
+//                System.out.println("Weekday");
+//                break;
+//            case 6:
+//            case 7:
+//                System.out.println("Weekend");
+//                break;
+//        }
 
-        System.out.print("Enter number 1: ");
-        num1 = in.nextInt();
-        System.out.print("Enter number 2: ");
-        num2 = in.nextInt();
-        sum = num1 + num2;
-        System.out.println("The sum = " + sum);
-
-        System.out.print("Enter number 1: ");
-        num1 = in.nextInt();
-        System.out.print("Enter number 2: ");
-        num2 = in.nextInt();
-        sum = num1 + num2;
-        System.out.println("The sum = " + sum);
-
-        System.out.print("Enter number 1: ");
-        num1 = in.nextInt();
-        System.out.print("Enter number 2: ");
-        num2 = in.nextInt();
-        sum = num1 + num2;
-        System.out.println("The sum = " + sum);
-
-        System.out.print("Enter number 1: ");
-        num1 = in.nextInt();
-        System.out.print("Enter number 2: ");
-        num2 = in.nextInt();
-        sum = num1 + num2;
-        System.out.println("The sum = " + sum);
-
-
-        System.out.print("Enter number 1: ");
-        num1 = in.nextInt();
-        System.out.print("Enter number 2: ");
-        num2 = in.nextInt();
-        sum = num1 + num2;
-        System.out.println("The sum = " + sum);
-
-        System.out.print("Enter number 1: ");
-        num1 = in.nextInt();
-        System.out.print("Enter number 2: ");
-        num2 = in.nextInt();
-        sum = num1 + num2;
-        System.out.println("The sum = " + sum);
-
-        System.out.print("Enter number 1: ");
-        num1 = in.nextInt();
-        System.out.print("Enter number 2: ");
-        num2 = in.nextInt();
-        sum = num1 + num2;
-        System.out.println("The sum = " + sum);
-
-        System.out.print("Enter number 1: ");
-        num1 = in.nextInt();
-        System.out.print("Enter number 2: ");
-        num2 = in.nextInt();
-        sum = num1 + num2;
-        System.out.println("The sum = " + sum);
-
-
-        System.out.print("Enter number 1: ");
-        num1 = in.nextInt();
-        System.out.print("Enter number 2: ");
-        num2 = in.nextInt();
-        sum = num1 + num2;
-        System.out.println("The sum = " + sum);
+        switch (day) {
+            case 1, 2, 3, 4, 5 -> System.out.println("Weekday");
+            case 6, 7 -> System.out.println("Weekend");
+        }
 
     }
 }
