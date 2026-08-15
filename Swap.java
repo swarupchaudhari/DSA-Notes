@@ -1,32 +1,29 @@
 package com.kunal;
 
+import java.util.Arrays;
+
 public class Swap {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 20;
-
-        // swap numbers code
-//        int temp = a;
-//        a = b;
-//        b = temp;
-
-        swap(a, b);
-
-        System.out.println(a + " " + b);
-
-        String name = "Kunal Kushwaha";
-        changeName(name);
-        System.out.println(name);
+        int[] arr = {1, 3, 23, 9, 18, 56};
+//        swap(arr, 0, 4);
+        reverse(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
-    static void changeName(String naam) {
-        naam = "Rahul Rana"; // creating a new object
-    }
+    static void reverse(int[] arr) {
+        int start = 0;
+        int end = arr.length-1;
 
-    static void swap(int num1, int num2) {
-        int temp = num1;
-        num1 = num2;
-        num2 = temp;
-        // this change will only be valid in this function scope only.
+        while (start < end) {
+            // swap
+            swap(arr, start, end);
+            start++;
+            end--;
+        }
+    }
+    static void swap(int[] arr, int index1, int index2) {
+        int temp = arr[index1];
+        arr[index1] = arr[index2];
+        arr[index2] = temp;
     }
 }
